@@ -49,6 +49,11 @@ body {
     margin-right: 30px;
 }
 
+.navbar-expand-lg {
+    background: linear-gradient(rgb(0, 252, 252), lightskyblue);
+    box-shadow: 0 0 4px royalblue;
+}
+
 .navbar-brand,
 .navbar button,
 .navbar img {
@@ -85,7 +90,7 @@ body {
     background-image: url(../img/bg2.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .orderr {
@@ -128,6 +133,15 @@ body {
     box-sizing: border-box;
     overflow: hidden;
     transition: all ease-in .2s;
+}
+
+.favorites {
+    background-image: url(../img/bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    margin-top: -40px;
 }
 
 .favorites h2 {
@@ -197,21 +211,15 @@ body {
     transform: scale(1.3);
 }
 
-.fav {
-    background-image: url(../img/travel.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    transform: translatez(0);
-    -webkit-transform: translate3d(0, 0, 0);
-    margin-top: -40px;
-    padding: 40px 0;
-}
-
 /* Travel Style */
 
 .travel-style {
-    margin-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-image: url(../img/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .travel-style h1 {
@@ -284,11 +292,12 @@ body {
 
 .travel-style .btn {
     border: 2px solid rgb(65, 94, 225);
-    color: rgb(65, 94, 225);
+    color: white;
     font-family: 'PoppinsM';
     font-size: 14px;
-    width: 30%;
+    width: 50%;
     margin-top: 40px;
+    transition: all ease .6s;
 }
 
 .travel-style .btn:hover {
@@ -677,7 +686,7 @@ h3 {
 @media (max-width: 768px) {
 
     .travel h1 {
-        font-size: 48px;
+        font-size: 42px;
     }
 
     .travel-style h1 {
